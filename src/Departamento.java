@@ -1,11 +1,9 @@
-import lombok.*;
 
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
-@NoArgsConstructor
 public class Departamento {
+    public Departamento(String nombre) {
+        this.nombre = nombre;
+    }
+
     private String nombre;
     private int numEmpleados;
     private Empleado[] empleados = new Empleado[2];
